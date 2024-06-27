@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Dino Game</h1>
+        <p>Ajude o dinossauro a pular sobre os ovos sem tocá-los e faça a maior pontuação possível!</p>
+        <button id="openUrlButton">Download</button>
+        <button id="openHtmlButton">Play in Web</button>
+    </div>
+
+    <script>
+        // Função para abrir uma URL em uma nova aba
+        function openUrl() {
+            window.open('https://www.mediafire.com/file/2zzh15o11yppi5o/DinossaurGame.zip/file', '_blank');
+        }
+
+        // Função para abrir o HTML do jogo
+        function openHtml() {
+            window.location.href = 'game/index.html';
+        }
+
+        // Adicionando event listeners aos botões
+        document.getElementById('openUrlButton').addEventListener('click', openUrl);
+        document.getElementById('openHtmlButton').addEventListener('click', openHtml);
+    </script>
+</body>
+</html>
